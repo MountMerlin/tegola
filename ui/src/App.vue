@@ -13,13 +13,14 @@ import LeftNav from "./components/LeftNav/LeftNav.vue";
 import Mapbox from "./components/Mapbox.vue";
 import { store, mutations } from "./globals/store";
 
-const axios = require("axios");
+import axios from 'axios';
 
 // for production the apiRoot is empty so relative URLs are used
 let apiRoot = "";
 if (process.env.NODE_ENV != "production") {
   // for development it's easier to use a remote capabilities endpoint
-  apiRoot = "https://tegola-osm-demo.go-spatial.org/v1/";
+  // apiRoot = "https://tegola-osm-demo.go-spatial.org/v1/";
+  apiRoot = "https://demo.xyzmaps.org/";
 }
 
 export default {
@@ -121,19 +122,23 @@ html {
   padding: 10px;
   pointer-events: auto;
 }
+
 .mapboxgl-popup-content h4 {
   margin: 0 0 0.5em 0;
   border-bottom: 1px solid #ccc;
 }
+
 .mapboxgl-popup-content ul {
   margin: 0 0 1em 0;
   list-style: none;
   padding: 0;
 }
-.mapboxgl-popup-content ul > li {
+
+.mapboxgl-popup-content ul>li {
   list-style: none;
   padding: 0;
 }
+
 .mapboxgl-popup-content ul:last-child {
   margin-bottom: 0;
 }
