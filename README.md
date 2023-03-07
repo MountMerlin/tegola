@@ -213,7 +213,7 @@ To build tegola from the source, make sure you have Go installed and have cloned
 Navigate to the repository then run the following command:
 
 ```bash
-go generate ... && cd cmd/tegola/ && go build -mod vendor
+go generate ./... -./vendor/... && cd cmd/tegola/ && go build -mod vendor
 ```
 
 You will now have a binary named `tegola` in the current directory which is [ready to run](#running-tegola-as-a-vector-tile-server).
