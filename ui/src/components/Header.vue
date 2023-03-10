@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <h1>Tegola ({{ capabilities.version }})</h1>
+    <h1>XYZ basemap ({{ capabilities.version }})</h1>
   </div>
 </template>
 
