@@ -26,3 +26,4 @@ yarn-error.log*
 *.sln
 *.sw?
 cmd/tegola_lambda/tegola_lambda
+*.generated.go
